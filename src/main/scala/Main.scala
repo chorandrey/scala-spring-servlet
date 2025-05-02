@@ -13,7 +13,7 @@ object Main {
   private val serverPort = 8080
 
   def main(args: Array[String]): Unit = {
-    println("Hello, World!")
+    println("Started server at port: " + serverPort)
 
     // Create and configure a ThreadPool.// Create and configure a ThreadPool.
     val threadPool = new QueuedThreadPool()
@@ -51,8 +51,8 @@ object Main {
       server.join()
     } catch {
       case ex: InterruptedException =>
-        ex.printStackTrace()
-        println("Server shutting down.")
+        println("Program interrupted.")
+        println("\nServer shutting down.\n")
         server.stop()
     }
   }

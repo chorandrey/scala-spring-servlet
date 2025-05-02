@@ -14,7 +14,7 @@ class SampleController {
   }
 
   @GetMapping(Array("/hello"))
-  def sayHello() = {
+  def sayHello(): String = {
     "Hello from Spring MVC with Jetty!"
   }
 }

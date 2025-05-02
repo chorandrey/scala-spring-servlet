@@ -5,6 +5,8 @@ ThisBuild / scalaVersion := "2.13.16"
 val springVersion = "6.2.6"
 val jettyVersion = "12.0.19"
 
+enablePlugins(JavaAppPackaging)
+
 lazy val root = (project in file("."))
   .settings(
     name := "scala-servlet",

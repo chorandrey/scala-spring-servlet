@@ -9,7 +9,7 @@ enablePlugins(JavaAppPackaging)
 
 lazy val root = (project in file("."))
   .settings(
-    name := "scala-servlet",
+    name := "scala-spring-servlet",
     idePackagePrefix := Some("com.andy"),
     libraryDependencies ++= Seq(
       "org.eclipse.jetty" % "jetty-server" % jettyVersion,
